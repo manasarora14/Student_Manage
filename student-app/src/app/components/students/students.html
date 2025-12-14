@@ -1,0 +1,30 @@
+<h2>Students</h2>
+
+<form (ngSubmit)="save()">
+  <input [(ngModel)]="selected().name" name="name" placeholder="Name" />
+  <input [(ngModel)]="selected().class" name="class" placeholder="Class" />
+  <input [(ngModel)]="selected().section" name="section" placeholder="Section" />
+
+  <button type="submit">
+    {{ selected().id === 0 ? "Add" : "Update" }}
+  </button>
+</form>
+
+<hr>
+
+<table border="1">
+  <tr>
+    <th>ID</th><th>Name</th><th>Class</th><th>Section</th><th>Action</th>
+  </tr>
+
+  <tr *ngFor="let s of students()">
+    <td>{{s.id}}</td>
+    <td>{{s.name}}</td>
+    <td>{{s.class}}</td>
+    <td>{{s.section}}</td>
+    <td>
+      <button (click)="edit(s)">Edit</button>
+      <button (click)="delete(s.id)">Delete</button>
+    </td>
+  </tr>
+</table>

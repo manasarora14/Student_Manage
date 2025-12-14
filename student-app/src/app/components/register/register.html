@@ -1,0 +1,17 @@
+<h2>Register</h2>
+
+<p style="color:green">{{ message() }}</p>
+
+<!-- EMAIL -->
+<input placeholder="Email"
+       [ngModel]="email()"
+       (ngModelChange)="email.set($event)" />
+<br><br>
+
+<!-- PASSWORD -->
+<input placeholder="Password" type="password"
+       [ngModel]="password()"
+       (ngModelChange)="password.set($event)" />
+<br><br>
+
+<button (click)="register()">Register</button>
