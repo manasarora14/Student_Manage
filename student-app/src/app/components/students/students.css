@@ -1,0 +1,83 @@
+.students-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Add Student Section Header */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  color: #2d3748;
+}
+
+/* The Table Styling */
+.student-table-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #f7fafc;
+  padding: 15px;
+  text-align: left;
+  color: #718096;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+td {
+  padding: 15px;
+  border-top: 1px solid #edf2f7;
+  color: #4a5568;
+}
+
+tr:hover {
+  background-color: #f8fafc;
+}
+
+/* Action Buttons (Edit/Delete) */
+.btn-action {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  margin-right: 8px;
+  border: 1px solid transparent;
+}
+
+.btn-edit {
+  background-color: #ebf4ff;
+  color: #3182ce;
+}
+
+.btn-delete {
+  background-color: #fff5f5;
+  color: #e53e3e;
+}
+
+/* Add/Edit Student Form (Dashboard Style) */
+.student-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  border: 1px solid #e2e8f0;
+}

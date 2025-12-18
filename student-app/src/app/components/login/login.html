@@ -2,13 +2,13 @@
 
 <p style="color:red">{{ error() }}</p>
 
-<!-- EMAIL -->
+
 <input placeholder="Email"
        [ngModel]="email()"
        (ngModelChange)="email.set($event)" />
 <br><br>
 
-<!-- PASSWORD -->
+
 <input placeholder="Password" type="password"
        [ngModel]="password()"
        (ngModelChange)="password.set($event)" />
