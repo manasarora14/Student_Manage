@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './students.html',
+  styleUrl: './students.css' // Ensure this exists to see your styling
 })
 export class StudentsComponent {
 

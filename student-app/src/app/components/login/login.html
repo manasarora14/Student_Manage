@@ -2,12 +2,10 @@
 
 <p style="color:red">{{ error() }}</p>
 
-
 <input placeholder="Email"
        [ngModel]="email()"
        (ngModelChange)="email.set($event)" />
 <br><br>
-
 
 <input placeholder="Password" type="password"
        [ngModel]="password()"
@@ -15,3 +13,7 @@
 <br><br>
 
 <button (click)="login()">Login</button>
+
+<div style="margin-top: 20px;">
+  <p>Don't have an account? <a routerLink="/register">Register here</a></p>
+</div>
